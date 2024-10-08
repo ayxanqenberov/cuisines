@@ -1,0 +1,71 @@
+aside {
+    min-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45.62rem;
+    position: fixed;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.asidePart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 40rem;
+}
+
+.menuList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.menuList li a {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.menuList li:hover a {
+    /* color: red; */
+    animation: afterList 1s;
+}
+
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact span:last-child {
+    font-size: 10px;
+}
+
+.contact span:first-child {
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.contact p {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.textAside{
+    color: grey;
+}
+
+@keyframes afterList {
+    from {
+        border-bottom: none;
+
+    }
+    to {
+        border-bottom: 1px solid grey;
+    }
+}
